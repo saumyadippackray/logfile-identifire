@@ -1,6 +1,5 @@
 package com.cs.logfile.time.identifier.logfileidentifier.entiry;
 
-import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.Entity;

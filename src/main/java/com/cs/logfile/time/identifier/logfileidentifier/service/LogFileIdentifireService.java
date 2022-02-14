@@ -4,7 +4,6 @@ import com.cs.logfile.time.identifier.logfileidentifier.configiration.LogFileIde
 import com.cs.logfile.time.identifier.logfileidentifier.dto.Event;
 import com.cs.logfile.time.identifier.logfileidentifier.dto.State;
 import com.cs.logfile.time.identifier.logfileidentifier.entiry.EventStatus;
-import com.cs.logfile.time.identifier.logfileidentifier.repository.EventStatusRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -23,9 +22,6 @@ public class LogFileIdentifireService {
 
     @Autowired
     DbOperationService dbOperationService;
-
-    @Autowired
-    EventStatusRepository eventStatusRepository;
 
     @Autowired
     LogFileIdentifireConfiguration logFileIdentifireConfiguration;
@@ -107,5 +103,4 @@ public class LogFileIdentifireService {
 
         return eventStatus;
     }
-
 }
