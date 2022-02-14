@@ -24,7 +24,6 @@ public class LogfileIdentifierApplication implements CommandLineRunner{
 	public void run(String... args) {
 		logger.info("calling process File service method");
 		logFileIdentifireService.processFile(args[0]);
-		//logFileIdentifireService.get();
 	}
 
 }
