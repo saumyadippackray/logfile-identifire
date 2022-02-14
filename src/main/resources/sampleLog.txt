@@ -1,0 +1,4 @@
+{"id":"ABCD234","state":"STARTED","type":"APPLICATION_LOG","host":null,"timestamp":1607823994159}
+{"id":"ABCE123","state":"STARTED","type":"APPLICATION_LOG","host":null,"timestamp":1607823994159}
+{"id":"ABCD234","state":"FINISHED","type":"APPLICATION_LOG","host":null,"timestamp":1607823994160}
+{"id":"ABCE123","state":"FINISHED","type":"APPLICATION_LOG","host":null,"timestamp":1607823994164}

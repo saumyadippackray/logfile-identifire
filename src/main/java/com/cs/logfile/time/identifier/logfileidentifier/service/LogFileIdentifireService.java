@@ -66,6 +66,7 @@ public class LogFileIdentifireService {
                         events.put(event1.getId(),event1);
                     }
                 }
+                fr.close();
             }
         catch (FileNotFoundException fileNotFoundException){
             logger.info("File is not present"+fileNotFoundException);
@@ -73,7 +74,6 @@ public class LogFileIdentifireService {
         catch (IOException ioException){
             logger.info("io exception");
         }
-
     }
 
     //Method to calculate the delay time between two events with same id
@@ -107,10 +107,5 @@ public class LogFileIdentifireService {
 
         return eventStatus;
     }
-    public void get(){
-        for(EventStatus eventStatus:eventStatusRepository.findAll()){
-            System.out.println(eventStatus);
-        }
 
-    }
 }
